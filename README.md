@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+## 🎯Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The tutor-end course management system is a lightweight course filtering and management tool specifically designed for mentors
 
-Currently, two official plugins are available:
+## 🌟 **Key Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Course Filtering**: Supports dual filtering by **month** and **course status** (Scheduled / Completed)
+- **Responsive Design**: Optimized for desktop and tablet devices with a clean, user-friendly layout
+- **Mock Data & API Switching**: Built-in mock data support with seamless transition to real backend APIs
+- **State Management**: Lightweight, high-performance state management implemented with Zustand
 
-## React Compiler
+## 🛠 **Tech Stack**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Framework**: React 18 (TypeScript)
+- **Build Tool**: Vite
+- **State Management**: Zustand
+- **HTTP Client**: Axios (with a unified request instance wrapper)
+- **Styling Solution**: CSS Modules (style isolation)
+- **Code Hosting**: GitHub
 
-## Expanding the ESLint configuration
+## 📦 **Quick Start**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Prerequisites**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js ≥ 16.0.0
+- npm 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📁 Main Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```plaintext
+src/
+├── pages/               # Component directory
+│   ├── Dashboard.tsx    # Core dashboard component (course filtering + list)
+│   └── Dashboard.module.css  # Dashboard component styles
+├── stores/              # State management directory
+│   └── tutorPortalStore.ts # Course and filtering state management
+├── styles/              # Styles directory
+│   └── GlobalStyles.module.css # Global styles
+├── types/               # Type definition directory
+│   └── Lesson.ts        # Lesson type definition
+├── http.ts              # Axios instance encapsulation
+├── mock/                # Mock data
+└── main.tsx             # Project entry file
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️Running Demo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![login](.\screenshots\login.png)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![main](.\screenshots\main.png)
+
+![image-20260104003402956](.\screenshots\takeclass.png)
+

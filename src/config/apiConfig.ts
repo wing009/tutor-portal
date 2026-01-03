@@ -1,4 +1,4 @@
-import type { Lesson } from '@/types';
+import type { Lesson } from '@/types/lesson';
 import { initialLessons } from '@/data/initialLessons';
 
 // 🌟 全局数据来源配置（仅在此处修改）
