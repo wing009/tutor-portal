@@ -45,9 +45,9 @@ src/
 
 ## ⚙️Running Demo
 
-![login](.\screenshots\login.png)
+![login](./screenshots/login.png)
 
-![main](.\screenshots\main.png)
+![main](./screenshots/main.png)
 
-![image-20260104003402956](.\screenshots\takeclass.png)
+![image-20260104003402956](./screenshots/takeclass.png)
 
