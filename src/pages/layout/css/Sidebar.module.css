@@ -1,0 +1,93 @@
+/* 侧边栏容器样式 */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+/* 侧边栏标题区域 */
+.sidebarHeader {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 20px;
+}
+
+.sidebarTitle {
+  color: #007bff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 菜单容器 */
+.menuContainer {
+  padding: 0 10px;
+}
+
+/* 菜单链接通用样式（默认+选中状态通过 CSS 类切换，无需 JS 计算） */
+.menuLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #343a40;
+  background-color: #f8f9fa;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* 选中状态样式 */
+.menuLink.active {
+  color: #fff;
+  background-color: #007bff;
+  border-left: 4px solid #0056b3;
+}
+
+/* 鼠标悬浮效果（非选中状态） */
+.menuLink:not(.active):hover {
+  background-color: #e9ecef;
+  border-left: 4px solid #007bff40;
+}
+
+/* 退出登录按钮（复用菜单链接样式，仅修改颜色） */
+.logoutButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #343a40;
+  background-color: #f8f9fa;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.logoutButton:hover {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border-left: 4px solid #dc354540;
+}
+
+/* 图标样式统一 */
+.menuIcon {
+  font-size: 1rem;
+}

@@ -1,0 +1,60 @@
+/* 布局容器样式，与项目整体风格统一 */
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 主内容区域（侧边栏右侧） */
+.mainContent {
+  flex: 1;
+  margin-left: 240px; /* 与侧边栏宽度一致 */
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 顶部导航栏（欢迎语+退出按钮） */
+.headerBar {
+  padding: 16px 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* 欢迎文本 */
+.welcomeText {
+  margin-right: 16px;
+  color: #343a40;
+  font-size: 0.95rem;
+}
+
+.welcomeText strong {
+  color: #2c3e50;
+}
+
+/* 退出按钮 */
+.logoutButton {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #c82333;
+}
+
+.logoutButton:active {
+  transform: scale(0.98);
+}
+
+/* 页面内容容器（Outlet 父容器） */
+.contentContainer {
+  padding: 24px;
+}

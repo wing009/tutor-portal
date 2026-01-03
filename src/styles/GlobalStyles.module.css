@@ -1,0 +1,107 @@
+/* 👇 所有页面共享的公共样式 */
+/* 页面基础容器（三个页面通用） */
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 精简版容器（MyCourses/Appointments 用，无内置左右padding） */
+.pageContainerSlim {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* 页面标题（三个页面通用） */
+.pageTitle {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+/* 课程板块通用样式（所有板块共享） */
+.section {
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+/* 板块标题基础样式（差异化边框在页面样式中定义） */
+.sectionTitle {
+  color: #343a40;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* 空数据提示（三个页面完全一致） */
+.emptyState {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* 课程卡片网格布局（三个页面完全一致） */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* 加载/错误提示（三个页面通用） */
+.loadingError {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.errorText {
+  color: #dc3545;
+}
+
+/* 筛选栏基础样式（仅 Dashboard 用，但归为公共组件样式） */
+.filterBar {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.filterInput {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.filterButton {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.filterButton:hover {
+  background-color: #0069d9;
+}
+
+

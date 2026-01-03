@@ -1,0 +1,35 @@
+/* 课程卡片专属样式（复用公共颜色变量，保持风格统一） */
+.lessonCard {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.lessonCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lessonSubject {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.lessonMeta {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 领取按钮微调（基于公共按钮样式） */
+.assignButton {
+  margin-top: 0.75rem;
+  background-color: #28a745 !important; /* 覆盖公共按钮颜色 */
+}
+
+.assignButton:hover {
+  background-color: #218838 !important;
+}

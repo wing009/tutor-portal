@@ -1,0 +1,23 @@
+/* 仅保留 Dashboard 专属差异化样式 */
+/* 各板块标题边框颜色（独有的差异化） */
+.todayTitle {
+  border-bottom: 2px solid #007bff;
+}
+
+.historicTitle {
+  border-bottom: 2px solid #6c757d;
+}
+
+.upcomingTitle {
+  border-bottom: 2px solid #ffc107;
+}
+
+.availableTitle {
+  border-bottom: 2px solid #28a745;
+}
+
+/* 覆盖公共容器的padding（Dashboard 需内置padding） */
+.pageContainer {
+  padding: 2rem;
+}
+

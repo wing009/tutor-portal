@@ -1,0 +1,5 @@
+/* 仅保留 Appointments 专属差异化样式 */
+/* 板块标题边框颜色（独有的差异化） */
+.sectionTitle {
+  border-bottom: 2px solid #ffc107;
+}
